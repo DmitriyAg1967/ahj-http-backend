@@ -1,0 +1,45 @@
+{
+  "name": "ahj-http-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "stop": "forever stopall",
+    "lint": "eslint ."
+  },
+  "author": "Dmitriy",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitriyAg1967/ahj-http-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DmitriyAg1967/ahj-http-backend/issues"
+  },
+  "homepage": "https://github.com/DmitriyAg1967/ahj-http-backend#readme",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "http": "^0.0.1-security",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "koa-cors": "^0.0.16"
+  }
+}
